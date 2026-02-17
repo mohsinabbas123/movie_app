@@ -5,8 +5,10 @@ export default function RootLayout() {
   return <Stack>
     <Stack.Screen
     name="(tabs)"
-    options={{headerShown: false}}
+    options={{
+      headerShown: false}}
      />
+   
  
   </Stack>
     
