@@ -48,11 +48,11 @@ export default function App() {
 
   <FlatList
   data={movies}
-  renderItem={({item}) => (
-    <Text className="text-white text-sm" >{item.title}</Text>
+  keyExtractor={(item) => item.id.toString()}
+  renderItem={({ item }) => (
+    <Text className="text-white text-sm">{item.title}</Text>
   )}
-
-  />
+/>
   </>
   </View>
   ) }
