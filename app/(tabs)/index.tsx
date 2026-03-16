@@ -52,6 +52,17 @@ export default function App() {
   renderItem={({ item }) => (
     <Text className="text-white text-sm">{item.title}</Text>
   )}
+
+  numColumns={3}
+  columnWrapperStyle = {{
+    justifyContent: 'flex-start',
+    gap: 20,
+    paddingRight: 5,
+    marginBottom: 10,
+    
+  }}
+
+
 />
   </>
   </View>
