@@ -1,4 +1,5 @@
 
+import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
@@ -50,7 +51,10 @@ export default function App() {
   data={movies}
   keyExtractor={(item) => item.id.toString()}
   renderItem={({ item }) => (
-    <Text className="text-white text-sm">{item.title}</Text>
+    // <Text className="text-white text-sm">{item.title}</Text> now instead of this we call our movieCard componenet
+    <MovieCard 
+    {... item}
+     />
   )}
 
   numColumns={3}
@@ -58,9 +62,12 @@ export default function App() {
     justifyContent: 'flex-start',
     gap: 20,
     paddingRight: 5,
-    marginBottom: 10,
+    marginBottom: 10
     
   }}
+
+  className="mt-2 pb-32"
+  scrollEnabled= {false}
 
 
 />
