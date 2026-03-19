@@ -12,12 +12,10 @@ import { ActivityIndicator, FlatList, Image, ScrollView, Text, View } from "reac
 export default function App() {
   const router = useRouter();
 
- const {
-  data: movies, 
-  loading: moviesLoading,
-  error: moviesError} = useFetch(() => fetchMovies({
-  query: ''
- }))
+const {
+  data: movies , 
+  loading: moviesLoading ,
+   error: moviesError} = useFetch (() => fetchMovies ({query: ''}));
 
   return (
 <View className="flex-1 bg-primary" >
@@ -81,4 +79,4 @@ export default function App() {
   
 </View>
   );
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
