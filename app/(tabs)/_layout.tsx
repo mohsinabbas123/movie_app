@@ -10,17 +10,17 @@ const TabIcon = ({ focused, icon, title }: any) => {
         source={images.highlight}
         className="flex flex-1 flex-row justify-center items-center min-w-[112px] min-h-16 mt-6 rounded-full overflow-hidden"
       >
-        <Image source={icon} tintColor="#151312" className="size-5" />
+        <Image source={icon} className="size-5" tintColor="#151312" />
 
-        <Text className="text-secondary font-semibold ml-2 text-sm">
+        <Text className="text-secondary font-semibold text-sm ml-2">
           {title}
         </Text>
       </ImageBackground>
     );
   }
   return (
-    <View>
-      <Image source={icon} tintColor="#A8B5DB" className="size-5  mt-4" />
+    <View className="flex-1 items-center justify-center">
+      <Image source={icon} className="size-5 mt-4" tintColor="#A8B5DB" />
     </View>
   );
 };
